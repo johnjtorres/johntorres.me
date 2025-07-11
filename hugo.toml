@@ -1,4 +1,50 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://johntorres.me/"
+copyright = "© John Torres"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
 theme = "hugo-bearcub"
+title = "John Torres"
+
+[markup]
+[markup.highlight]
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+
+[params]
+    dateFormat = "2006-01-02"
+    description = "Personal website of John Torres"
+    generateSocialCard = true
+    themeStyle = "original"
+    title = "John Torres"
+    madeWith = "Powered by [Hugo](https://gohugo.io/) and [Bear Cub](https://github.com/clente/hugo-bearcub) theme"
+
+[params.author]
+    name = "John Torres"
+    email = "john@johntorres.me"
+
+[menus]
+[[menus.main]]
+    name = "Home"
+    identifier = "home"
+    pageRef = "/"
+    weight = 10
+
+[[menus.main]]
+    name = "Blog"
+    identifier = "blog"
+    pageRef = "/blog"
+    weight = 20
+
+[[menus.main]]
+    name = "GitHub"
+    identifier = "github"
+    url = "https://github.com/johnjtorres"
+    weight = 30
+
+[[menus.main]]
+    name = "LinkedIn"
+    identifier = "linkedin"
+    url = "https://linkedin.com/in/johnjamestorres"
+    weight = 30
+
