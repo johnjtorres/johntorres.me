@@ -1,5 +1,5 @@
 baseURL = "https://johntorres.me/"
-copyright = "© John Torres"
+copyright = "© 2025 John Torres. Licensed under CC BY 4.0."
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 theme = "hugo-bearcub"
