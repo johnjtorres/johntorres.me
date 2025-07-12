@@ -3,7 +3,7 @@
 This repository uses a dual-license structure:
 
 - **Code** (Hugo templates, configuration, etc.) is licensed under the MIT License.
-- **Content** (blog posts, writing, etc.) is licensed under CC BY 4.0.
+- **Content** (blog posts, writing, etc.) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ---
 
