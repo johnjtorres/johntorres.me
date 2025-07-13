@@ -4,6 +4,10 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 title = "John Torres"
 
+[module]
+    [[module.imports]]
+        path = "github.com/clente/hugo-bearcub"
+
 [markup]
 [markup.highlight]
     lineNos = true
