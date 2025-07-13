@@ -20,7 +20,7 @@ title = "John Torres"
     generateSocialCard = true
     themeStyle = "original"
     title = "John Torres"
-    madeWith = "Powered by [Hugo](https://gohugo.io/) and [Bear Cub](https://github.com/clente/hugo-bearcub) theme"
+    madeWith = "Powered by [Hugo](https://gohugo.io/) and [Bear Cub](https://github.com/clente/hugo-bearcub)."
 
     [params.author]
         name = "John Torres"
