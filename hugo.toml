@@ -9,10 +9,10 @@ title = "John Torres"
         path = "github.com/clente/hugo-bearcub"
 
 [markup]
-[markup.highlight]
-    lineNos = true
-    lineNumbersInTable = false
-    noClasses = false
+    [markup.highlight]
+        lineNos = true
+        lineNumbersInTable = false
+        noClasses = false
 
 [params]
     dateFormat = "2006-01-02"
@@ -22,32 +22,31 @@ title = "John Torres"
     title = "John Torres"
     madeWith = "Powered by [Hugo](https://gohugo.io/) and [Bear Cub](https://github.com/clente/hugo-bearcub) theme"
 
-[params.author]
-    name = "John Torres"
-    email = "john@johntorres.me"
+    [params.author]
+        name = "John Torres"
+        email = "john@johntorres.me"
 
 [menus]
-[[menus.main]]
-    name = "Home"
-    identifier = "home"
-    pageRef = "/"
-    weight = 10
+    [[menus.main]]
+        name = "Home"
+        identifier = "home"
+        pageRef = "/"
+        weight = 10
 
-[[menus.main]]
-    name = "Blog"
-    identifier = "blog"
-    pageRef = "/blog"
-    weight = 20
+    [[menus.main]]
+        name = "Blog"
+        identifier = "blog"
+        pageRef = "/blog"
+        weight = 20
 
-[[menus.main]]
-    name = "GitHub"
-    identifier = "github"
-    url = "https://github.com/johnjtorres"
-    weight = 30
+    [[menus.main]]
+        name = "GitHub"
+        identifier = "github"
+        url = "https://github.com/johnjtorres"
+        weight = 30
 
-[[menus.main]]
-    name = "LinkedIn"
-    identifier = "linkedin"
-    url = "https://linkedin.com/in/johnjamestorres"
-    weight = 30
-
+    [[menus.main]]
+        name = "LinkedIn"
+        identifier = "linkedin"
+        url = "https://linkedin.com/in/johnjamestorres"
+        weight = 30
