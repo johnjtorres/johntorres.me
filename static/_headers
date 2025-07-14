@@ -1,5 +1,4 @@
 /*
-  Cache-Control: public, max-age=28800, stale-while-revalidate=86400
   Content-Security-Policy: default-src 'none'; script-src 'self'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; form-action 'none'; frame-ancestors 'none'; base-uri 'none'
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=(), fullscreen=()
   Referrer-Policy: no-referrer
