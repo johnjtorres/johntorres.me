@@ -1,4 +1,5 @@
 /*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
   Content-Security-Policy: default-src 'none'; script-src 'self'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; form-action 'none'; frame-ancestors 'none'; base-uri 'none'
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=(), fullscreen=()
   Referrer-Policy: no-referrer
@@ -7,12 +8,3 @@
 
 /*.css
   Cache-Control: public, max-age=31536000, immutable
-
-/index.html
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
-
-/blog/index.html
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
-
-/blog/*/index.html
-  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
