@@ -15,12 +15,12 @@
   {{ if (.Page.Store.Get "hasCodeBlock") }}
   {{ $syntax := resources.Get "syntax.css" | minify | resources.Fingerprint "sha384" }}
   <link href="{{ $syntax.RelPermalink }}" rel="stylesheet" integrity="{{ $syntax.Data.Integrity }}" crossorigin="anonymous">
-  {{ end }}
+  {{ end -}}
 
   {{ with .Params.style }}
   {{ $extra := resources.Get . | minify | resources.Fingerprint "sha384" }}
   <link href="{{ $extra.RelPermalink }}" rel="stylesheet" integrity="{{ $extra.Data.Integrity }}" crossorigin="anonymous">
-  {{ end }}
+  {{ end -}}
 
   {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
