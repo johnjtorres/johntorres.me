@@ -1,5 +1,5 @@
 baseURL = "https://johntorres.me/"
-copyright = "© 2025 John Torres. Licensed under CC BY 4.0."
+copyright = "© 2025 John Torres • [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 title = "John Torres"
@@ -20,7 +20,7 @@ title = "John Torres"
     generateSocialCard = true
     themeStyle = "original"
     title = "John Torres"
-    madeWith = "Powered by [Hugo](https://gohugo.io/) and [Bear Cub](https://github.com/clente/hugo-bearcub)."
+    madeWith = "Built with [Hugo](https://gohugo.io/) + [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
     [params.author]
         name = "John Torres"
