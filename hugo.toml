@@ -38,15 +38,3 @@ title = "John Torres"
         identifier = "blog"
         pageRef = "/blog"
         weight = 20
-
-    [[menus.main]]
-        name = "GitHub"
-        identifier = "github"
-        url = "https://github.com/johnjtorres"
-        weight = 30
-
-    [[menus.main]]
-        name = "LinkedIn"
-        identifier = "linkedin"
-        url = "https://linkedin.com/in/johnjamestorres"
-        weight = 30
