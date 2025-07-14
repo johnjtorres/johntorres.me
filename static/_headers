@@ -3,3 +3,6 @@
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=(), fullscreen=()
   Referrer-Policy: no-referrer
   X-Frame-Options: DENY
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
