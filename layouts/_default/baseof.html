@@ -9,18 +9,19 @@
 
   {{- partial "seo_tags.html" . -}}
 
-  {{ $style := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify }}
-  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+{{ $style := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify | resources.Fingerprint "sha384" }}
+<link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
 
-  {{ if (.Page.Store.Get "hasCodeBlock") }}
-    {{ $syntax := resources.Get "syntax.css" | minify }}
-    <link href="{{ $syntax.RelPermalink }}" rel="stylesheet">
-  {{ end }}
+{{ if (.Page.Store.Get "hasCodeBlock") }}
+  {{ $syntax := resources.Get "syntax.css" | minify | resources.Fingerprint "sha384" }}
+  <link href="{{ $syntax.RelPermalink }}" rel="stylesheet" integrity="{{ $syntax.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
 
-  {{ with .Params.style }}
-    {{ $extra := resources.Get . | minify }}
-    <link href="{{ $extra.RelPermalink }}" rel="stylesheet">
-  {{ end }}
+{{ with .Params.style }}
+  {{ $extra := resources.Get . | minify | resources.Fingerprint "sha384" }}
+  <link href="{{ $extra.RelPermalink }}" rel="stylesheet" integrity="{{ $extra.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
 
   {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
