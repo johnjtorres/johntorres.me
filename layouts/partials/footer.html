@@ -1,3 +1,10 @@
-<small>
-  {{ markdownify .Site.Copyright }} • {{ markdownify .Site.Params.madeWith }}
-</small>
+<div class="footer-meta">
+  <small>
+    {{ markdownify .Site.Copyright }} • {{ markdownify .Site.Params.madeWith }}
+  </small>
+  {{ if and .IsPage (eq .Section "blog") }}
+  <p style="font-size: 0.875em; margin-top: 0.5em;">
+    <a href="#main-content">Back to top ↑</a>
+  </p>
+  {{ end }}
+</div>
