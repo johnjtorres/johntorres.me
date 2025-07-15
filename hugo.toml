@@ -16,7 +16,7 @@ title = "John Torres"
 
 [params]
     dateFormat = "2006-01-02"
-    description = "Personal website of John Torres"
+    description = "Homepage of John Torres"
     generateSocialCard = true
     themeStyle = "original"
     title = "John Torres"

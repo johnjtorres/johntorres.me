@@ -1,5 +1,3 @@
-# John Torres's Blog
-
-This is the source for my personal blog.
+# Homepage of John Torres
 
 👉 [Visit the site](https://johntorres.me/)
